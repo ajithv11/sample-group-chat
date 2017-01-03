@@ -1,0 +1,64 @@
+div#resources
+
+	link(rel='stylesheet', href='#{baseUrl}/stylesheets/style.css')
+	script(src='#{baseUrl}/javascripts/jquery-1.11.3.min.js')
+	script(src='#{baseUrl}/javascripts/jquery-ui.min-1.11.4.js')
+	script(src='#{baseUrl}/javascripts/bootstrap.min.js')
+	script(src='#{baseUrl}/javascripts/scripts.js')
+	script(type="text/javascript").
+	
+	
+	div.reg-container
+		ul.tab
+			li
+				a(href="#", class="tablinks active", onclick="openCity(event, 'Login')") Login
+			li
+				a(href="#", class="tablinks", onclick="openCity(event, 'Register')") Register
+			li.clear-both
+		div#Login.tabcontent.blockDiv
+			div.guesttoggle				
+				input(type="checkbox", name="guesttoggle", class="guesttoggleinput" id="guesttoggleinput")
+				label Guest
+			div.login-container
+				div.left-div#loginForm
+					form(name="login-form", id = "login-form", method="post", action="")
+						div.form-content
+							h6 User login
+							div.form-group
+								input(type="text", name="email", class="form-control email", placeholder="Email", required)
+							div.form-group
+								input(type="password", name="password", class="form-control password", placeholder="Password", required)
+							div#loginError.error
+							div#loginSuccess
+							div.submit-button
+								input(type="submit",class="btn", value="Login")
+				div.right-div#guestForm
+					form(name="login-form-guest",id="login-form-guest", method="post", action="")
+						div.form-content
+							h6 Guest login
+							div.form-group
+								input(type="text", name="fullname", class="form-control fullname" , placeholder="Name", required)
+							div.form-group
+								input(type="text", name="email", class="form-control email", placeholder="Email", required)
+							div#guestError.error
+							div.submit-button
+								input(type="submit",class="btn", value="Login")
+				div.clear-both
+				
+		div#Register.tabcontent
+			div.register-container
+				form(name="register-form",id="register-form", method="post", action="")
+						div.form-content
+							h6 User Registration
+							div.form-group
+								input(type="text", name="fullname", class="form-control fullname", placeholder="Name", required)
+							div.form-group
+								input(type="text", name="email", class="form-control email", placeholder="Email", required)
+							div.form-group
+								input(type="password", name="password", class="form-control password", placeholder="Password", required)
+							div#regError.error
+							div#regSuccess.success
+							div.submit-button
+								input(type="submit",class="btn",id="register-button", value="Register")
+		
+		

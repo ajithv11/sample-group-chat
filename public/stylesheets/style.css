@@ -1,0 +1,118 @@
+
+ /* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+
+ul.tab li {float: left;}
+.clear-both{clear:both;}
+/*.left-div, .right-div{width:48%;float:left;}*/
+/* Style the links inside the list items */
+#guestForm{display:none;}
+.guesttoggle input{margin:0; padding:0; cursor:pointer;}
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.blockDiv{display:block;}
+ul.tab li.clear-both {
+    clear: both;
+    float: none;
+}
+
+.reg-container input[type="text"], .reg-container input[type="password"]{height:auto;padding:3px 5px;background:#fff;width:90%;text-transform:none !important;}
+
+.reg-container input[type="submit"]{ height: auto !important;
+line-height: 10px;
+padding: 10px 20px;text-transform:none !important;
+width: auto !important;}
+.scroll-wrapper{height:300px;}
+
+
+.chatInput{background: rgba(255, 255, 255, 0.09) none repeat scroll 0 0 !important;
+border: 1px solid #999 !important;
+margin:0  !important;
+color: #111 !important;
+display: inline-block !important;
+float: left !important;
+height: 40px !important;
+padding: 10px 5px !important;
+width: 80% !important;}
+#chatform .btn-send {
+border-radius: 0 4px 4px 0  !important;
+line-height: 21px !important;
+padding: 8px 15px !important;
+}
+#chatform{margin:10px 0;}
+#chatform input[type="submit"] {
+background: #999 none repeat scroll 0 0 !important;
+border-top: 1px solid #999;
+border-right: 1px solid #999;
+border-bottom: 1px solid #999;
+border-left:none !important;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+color: #eee;
+float: right !important;
+font-size: 11px;
+font-weight: bold;
+height: 40px !important;
+letter-spacing: 1px;
+line-height: 20px;
+max-width: 20% !important;
+min-width: 20% !important;
+padding: 0;
+text-transform: uppercase;
+width: 20% !important;
+}
+.chat-message > label {
+    display: inline-block;
+    float: left;
+	margin:0;
+}
+
+.chat-message > p {
+    display: inline-block;
+    float: left;
+	margin:0;
+}
+.chat-message{padding:8px;}
+.error {
+    color: #dd0000;
+    font-size: 14px;    
+    padding: 5px 0;
+}
+.chat-datetime{float:right;margin-right:20px;font-style:italic;font-size:10px;}
+
+

@@ -1,0 +1,31 @@
+div#resources
+
+	link(rel='stylesheet', href='#{baseUrl}/stylesheets/style.css', type='text/css' media='all' )
+	link(rel='stylesheet', href='#{baseUrl}/stylesheets/scrollbar.css', type='text/css' media='all' )
+	script(src='#{baseUrl}/javascripts/jquery-1.11.3.min.js')
+	script(src='#{baseUrl}/javascripts/jquery-ui.min-1.11.4.js')
+	script(src='#{baseUrl}/javascripts/bootstrap.min.js')
+	script(src='#{baseUrl}/javascripts/scripts.js')
+	script(type="text/javascript").
+
+	
+	
+	div.chat-container
+		div.scroll-wrappers
+			div#loadMore
+				div.left-bar
+					span
+				div.loadmore Load More
+				div.right-bar
+					span
+				div.clear-both
+			div#conversation.scrollbar-inner
+				ul#chat-content
+					
+		div#chatform
+			form(name="chat-form", id = "chat-form", method="post", action="")				
+				input( name="typeMsg", type="text", id="typeMsg", class='chatInput')
+				input(type="submit",class="btn btn-warning btn-lg", value="Send", id="submit")
+				div.clear-both
+	
+	

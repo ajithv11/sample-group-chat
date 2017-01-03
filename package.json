@@ -1,0 +1,54 @@
+{
+  "name": "techrish-group-chat",
+  "version": "1.0.0",
+  "description": "This is a sample group chat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+   "dependencies": {
+   	
+		"socket.io": "1.4.8",
+		"session.socket.io": "0.2.1",
+		"bcrypt-nodejs": "0.0.3",
+		"body-parser": "1.15.2",
+		"debug": "2.2.0",
+		"connect": "3.5.0",
+		"connect-flash": "0.1.1",
+		"cookie": "0.3.1",
+		"cookie-parser": "1.4.3",
+		"debug": "2.6.0",
+		"express": "4.14.0",
+		"express-mysql-session": "1.2.0",
+		"express-handlebars": "3.0.0",
+		"express-messages": "1.0.1",
+		"express-session": "1.14.0",
+		"express-validator": "2.20.8",
+		"express-myconnection": "1.0.4",
+		"fs": "*",
+		"md5": "2.2.1",
+		"node-datetime": "1.0.0",
+		"morgan": "1.7.0",
+		"serve-favicon": "2.3.0",
+		"mysql": "2.11.1",
+		"passport": "0.3.2",
+		"passport-local": "1.0.0",
+		"passport.socketio" : "3.6.2",
+		"jade": "1.11.0"
+	
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajithv11/sample-group-chat"
+  },
+  "keywords": [
+    "Sample",
+    "Chat"
+  ],
+  "author": "Ajith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajithv11/sample-group-chat/issues"
+  },
+  "homepage": "https://github.com/ajithv11/sample-group-chat"
+}
